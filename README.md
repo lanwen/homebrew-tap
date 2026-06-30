@@ -1,8 +1,48 @@
-# Homebrew Tap
+# Homebrew
 
-[![homebrew tap lanwen][homebrew_tap_badge]][homebrew_tap_url]
+## Formulae
+Invoke either of the following commands if the formula is hosted at GitHub
 
+```sh
+$ brew install lanwen/tap/<formula>
+```
 
+Or
 
-[homebrew_tap_badge]: https://img.shields.io/badge/brew%20tap-lanwen/tap-orange?style=flat-square&logo=Homebrew&color=FBB040
-[homebrew_tap_url]: https://github.com/lanwen/homebrew-tap
+```sh
+$ brew tap lanwen/tap
+$ brew install <formula>
+```
+
+Invoke the following command if the formula is *not* hosted at GitHub
+
+```sh
+brew tap lanwen/homebrew-tap https://github.com/lanwen/homebrew-tap.git
+brew install <formula>
+```
+
+## Casks
+Invoke either of the following commands if the cask is hosted at GitHub
+
+```sh
+$ brew install --cask lanwen/tap/<cask>
+```
+
+Or
+
+```sh
+$ brew tap lanwen/tap
+$ brew install --cask <cask>
+```
+
+Invoke the following command if the cask is *not* hosted at GitHub
+
+```sh
+brew tap lanwen/homebrew-tap https://github.com/lanwen/homebrew-tap.git
+brew install --cask <formula>
+```
+
+If you get a dialog stating the cask is broken try installing with `--no-quarantine`.
+
+## Documentation
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
