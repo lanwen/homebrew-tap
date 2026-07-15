@@ -1,18 +1,18 @@
-# Generated with JReleaser 1.24.0 at 2026-06-30T19:06:32.942291005Z
+# Generated with JReleaser 1.24.0 at 2026-07-15T09:51:30.409025152Z
 
 class Frmtr < Formula
   desc "Java formatter."
   homepage "https://github.com/lanwen/frmtr"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/lanwen/frmtr/releases/download/v0.1.0/frmtr-0.1.0-linux-x86_64.zip"
-    sha256 "28c57e88dce273ad5e22d3e2e5075c53e6eb66136edc495eceb2eebe0a43fc32"
+    url "https://github.com/lanwen/frmtr/releases/download/v0.2.0/frmtr-0.2.0-linux-x86_64.zip"
+    sha256 "971e425edef279634577f6d0c465b03f6719c8c7e99fa1642221a438590ec4e6"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/lanwen/frmtr/releases/download/v0.1.0/frmtr-0.1.0-osx-aarch_64.zip"
-    sha256 "6abeae76df9725efeea61edee956919ac56da96da32da43c93bf6967cb20b794"
+    url "https://github.com/lanwen/frmtr/releases/download/v0.2.0/frmtr-0.2.0-osx-aarch_64.zip"
+    sha256 "38a6b7a7569e245915a9df6c1c399ffd5f996466f56409075b72cef2a8faca8e"
   end
 
 
@@ -23,6 +23,6 @@ class Frmtr < Formula
 
   test do
     output = shell_output("#{bin}/frmtr --version")
-    assert_match "0.1.0", output
+    assert_match "0.2.0", output
   end
 end
